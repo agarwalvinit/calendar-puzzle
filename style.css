@@ -1,0 +1,55 @@
+body {
+  font-size: 16px;
+  color: #333;
+}
+
+.calendar {
+  width: 660px;
+  display: flex;
+}
+  
+  .calendar .calendar-block {
+    background-color: #4285f4;
+    width: 60px;
+    font-size: 14px;
+  }
+  
+  .calendar .calendar-time {
+    padding-top: 10px;
+    height: 50px;
+    display: flex;
+    justify-content: center;
+  }
+
+  .calendar .calendar-time:last-child {
+    padding: 0;
+    height: 0;
+  }
+  
+  .calendar-block .calendar-time-full {
+    font-weight: bold;
+    color: #7f7f7f;
+  }
+  
+  .calendar-block .calendar-time-full span, .calendar-block .calendar-time-half span {
+    padding-left: 6px;
+  }
+  
+  .calendar-block .calendar-time-half {
+    font-weight: bold;
+    color: #a7a7a7;
+  }
+  
+#calendar_event {
+  width: 620px;
+  height: 1440px;
+  border: 1px solid #000000;
+  overflow: hidden;
+  position: relative;
+}
+
+#calendar_event > div {
+  position: absolute;
+  text-align: center;
+  float: left;
+}
